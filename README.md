@@ -20,7 +20,6 @@
 ### Description:
 #### Model Comparison:
 The file [model_comparison](#https://github.com/SohaT7/Image_Classification/blob/main/model_comparison.ipynb) contains code that builds multiple models and compares the performance of the metrics for each. The models and the combination of letters they are referred to by in this project (these do not necessarily coincide with the actual official names/acronyms for each model in the field) are as follows:
- - Linear model (lm)
  - Neural Network model (nn)
  - Deep Neural Network model (dnn)
  - Deep Neural Network with a dropout layer (dndd)
@@ -45,9 +44,14 @@ The performance of each model was determined by calculating the 'loss' and 'accu
 #### Building Models:
 The Deep Neural Network with a Dropout layer (dnnd) consists of a Flatten layer, 1 dense hidden neuron layer, and 1 dense output layer. The Flatten layer ....
 The output layer has 10 classes, 1 for each digit from 0-9.
+
 <img style="width:60%" alt="dndd_summ" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnnd_summ.png"> 
 
+The Convolutional Neural Network (cnn) consists of a ...
+
 <img style="width:60%" alt="cnn_summ" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_summ.png">
+
+The Deep Convolutional Neural Network (dcnn) is made up of ...
 
 <img style="width:60%" alt="dcnn_summ" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dcnn_summ.png">
 
@@ -83,6 +87,9 @@ Recall Score: 0.9908
 <img alt="CM_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dcnn.png">
 
 ## Summary
+An exmaple prediction was made on the first image in the dataset, which accurately predicts the digit.
+
+<img style="width:50%" alt="prediction" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/prediction.png">
 
 
 ## Contact Information
