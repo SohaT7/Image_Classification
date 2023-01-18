@@ -18,13 +18,24 @@
 ### Tools Used:
 
 ### Description:
-The file [model_comparison](.....) contains code that builds multiple models and compares the performance of the metrics for each. The models and the combonation of letters they are referred to by in this project (these do not necessarily coincide with the actual official names/acronyms for each model in the field) are as follow:
- - Linear model (LM)
- - Neural Network model (NN)
- - Deep Neural Network model (DNN)
- - Deep Neural Network with a dropout layer (DNND)
- - Convolutional Neural Network (CNN)
- - Deep Convolutional Neural Network (DCNN)
+#### Model Selection:
+The file [model_comparison](#https://github.com/SohaT7/Image_Classification/blob/main/model_comparison.ipynb) contains code that builds multiple models and compares the performance of the metrics for each. The models and the combination of letters they are referred to by in this project (these do not necessarily coincide with the actual official names/acronyms for each model in the field) are as follows:
+ - Linear model (lm)
+ - Neural Network model (nn)
+ - Deep Neural Network model (dnn)
+ - Deep Neural Network with a dropout layer (dndd)
+ - Convolutional Neural Network (cnn)
+ - Deep Convolutional Neural Network (dcnn)
+
+After building and training each model, the 'accuracy' metric for the train, validation, and test sets was plotted for each model, as shown below:
+
+![acc_nn](#https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/nn_graph.png)
+![acc_dnn_dnnd](#https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnn_dnnd_graph.png)
+![acc_cnn_dcnn](#https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png)
+
+The performance of each model was determined by calculating the 'loss' and 'accuracy' metrics, based on which the top 3 best performing models were chosen: the Deep Neural Network with a Dropout layer (dnnd), the Convolutional Neural Network (cnn), and the Deep Convolutional Neural Network (dcnn).
+
+#### Image Classification:
 
 ## Results
 
