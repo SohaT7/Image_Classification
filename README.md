@@ -53,11 +53,11 @@ The output layer has 10 classes, 1 for each digit from 0-9.
 
 #### Model Metrics:
 The 'loss' and 'accuracy' metrics for the train set and the 'val_loss' and 'val_accuracy' metrics for the validation set plotted against the number of epochs for the three models can be seen below:
-<img style="width:60%" alt="dnnd_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnnd_metrics.png">
+<img style="width:70%" alt="dnnd_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnnd_metrics.png">
 
-<img style="width:60%" alt="cnn_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_metrics.png">
+<img style="width:70%" alt="cnn_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_metrics.png">
 
-<img style="width:60%" alt="dcnn_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dcnn_metrics.png">
+<img style="width:70%" alt="dcnn_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dcnn_metrics.png">
 
 The 'accuracy' of the CNN and DCNN can be compared below:
 <img style="width:60%" alt="cnn_dcnn_graph" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png">
@@ -74,13 +74,13 @@ Recall Score: 0.9789
 Precision Score: 0.9928
 Recall Score: 0.9928
 
-<img width="700" alt="CM_cnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_cnn.png">
+<img alt="CM_cnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_cnn.png">
 
 ### The Deep Convolutional Neural Network (dccn):
 Precision Score: 0.9908
 Recall Score: 0.9908
 
-<img width="400" alt="CM_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dcnn.png">
+<img alt="CM_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dcnn.png">
 
 ## Summary
 
