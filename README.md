@@ -33,10 +33,10 @@ After building and training each model, the 'accuracy' metric for the train, val
 
 <div class="row">
     <div class="column">
-        <img width="200" alt="acc_dnn_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnn_dnnd_graph.png"> 
+        <img style="width:100%" alt="acc_dnn_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnn_dnnd_graph.png"> 
     </div>
     <div class="column">
-        <img width="200" alt="acc_cnn_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png"> 
+        <img style="width:100%" alt="acc_cnn_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png"> 
     </div>
 </div>
 
