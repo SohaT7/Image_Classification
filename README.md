@@ -18,7 +18,7 @@
 ### Tools Used:
 
 ### Description:
-#### Model Selection:
+#### Model Comparison:
 The file [model_comparison](#https://github.com/SohaT7/Image_Classification/blob/main/model_comparison.ipynb) contains code that builds multiple models and compares the performance of the metrics for each. The models and the combination of letters they are referred to by in this project (these do not necessarily coincide with the actual official names/acronyms for each model in the field) are as follows:
  - Linear model (lm)
  - Neural Network model (nn)
@@ -29,23 +29,58 @@ The file [model_comparison](#https://github.com/SohaT7/Image_Classification/blob
 
 After building and training each model, the 'accuracy' metric for the train, validation, and test sets was plotted for each model, as shown below:
 
-<img style="width:70%" alt="acc_nn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/nn_graph.png">
+<img style="width:60%" alt="acc_nn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/nn_graph.png">
 
 <div class="row">
     <div class="column">
-        <img style="width:70%" alt="acc_dnn_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnn_dnnd_graph.png"> 
+        <img style="width:60%" alt="acc_dnn_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnn_dnnd_graph.png"> 
     </div>
     <div class="column">
-        <img style="width:70%" alt="acc_cnn_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png"> 
+        <img style="width:60%" alt="acc_cnn_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png"> 
     </div>
 </div>
 
 The performance of each model was determined by calculating the 'loss' and 'accuracy' metrics, based on which the top 3 best performing models were chosen: the Deep Neural Network with a Dropout layer (dnnd), the Convolutional Neural Network (cnn), and the Deep Convolutional Neural Network (dcnn).
 
-#### Image Classification:
+#### Building Models:
+The Deep Neural Network with a Dropout layer (dnnd) consists of a Flatten layer, 1 dense hidden neuron layer, and 1 dense output layer. The Flatten layer ....
+The output layer has 10 classes, 1 for each digit from 0-9.
+<img style="width:60%" alt="dndd_summ" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnnd_summ.png"> 
+
+<img style="width:60%" alt="cnn_summ" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_summ.png">
+
+<img style="width:60%" alt="dcnn_summ" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dcnn_summ.png">
+
+#### Model Metrics:
+The 'loss' and 'accuracy' metrics for the train set and the 'val_loss' and 'val_accuracy' metrics for the validation set plotted against the number of epochs for the three models can be seen below:
+<img style="width:60%" alt="dnnd_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnnd_metrics.png">
+
+<img style="width:60%" alt="cnn_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_metrics.png">
+
+<img style="width:60%" alt="dcnn_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dcnn_metrics.png">
+
+The 'accuracy' of the CNN and DCNN can be compared below:
+<img style="width:60%" alt="cnn_dcnn_graph" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png">
 
 ## Results
+The precision score, recall score, and confusion matrices for the three models are given below.
+### The Deep Neural Network with a dropout layer (dnnd):
+Precision Score: 0.9790
+Recall Score: 0.9789
 
+<img style="width:60%" alt="CM_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dnnd.png">
+
+### The Convolutional Neural Network (cnn):
+Precision Score: 0.9928
+Recall Score: 0.9928
+
+<img style="width:60%" alt="CM_cnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_cnn.png">
+
+### The Deep Convolutional Neural Network (dccn):
+Precision Score: 0.9908
+Recall Score: 0.9908
+
+<img style="width:60%" alt="CM_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dcnn.png">
 
 ## Summary
 
@@ -53,4 +88,4 @@ The performance of each model was determined by calculating the 'loss' and 'accu
 ## Contact Information
 Email: st.sohatariq@gmail.com
 
-<img width="700" alt="image" src="https://github.com/SohaT7/Mission_to_Mars/blob/main/Images/page1.png"> 
+ 
