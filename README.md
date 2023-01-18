@@ -18,7 +18,13 @@
 ### Tools Used:
 
 ### Description:
-
+The file [model_comparison](.....) contains code that builds multiple models and compares the performance of the metrics for each. The models and the combonation of letters they are referred to by in this project (these do not necessarily coincide with the actual official names/acronyms for each model in the field) are as follow:
+ - Linear model (LM)
+ - Neural Network model (NN)
+ - Deep Neural Network model (DNN)
+ - Deep Neural Network with a dropout layer (DNND)
+ - Convolutional Neural Network (CNN)
+ - Deep Convolutional Neural Network (DCNN)
 
 ## Results
 
