@@ -28,10 +28,9 @@ The file [model_comparison](#https://github.com/SohaT7/Image_Classification/blob
  - Deep Convolutional Neural Network (dcnn)
 
 After building and training each model, the 'accuracy' metric for the train, validation, and test sets was plotted for each model, as shown below:
-
-![acc_nn](https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/nn_graph.png)
-![acc_dnn_dnnd](https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnn_dnnd_graph.png)
-![acc_cnn_dcnn](https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png)
+<img width="400" alt="acc_nn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/nn_graph.png">
+<img width="400" alt="acc_dnn_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnn_dnnd_graph.png">
+<img width="400" alt="acc_cnn_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png">
 
 The performance of each model was determined by calculating the 'loss' and 'accuracy' metrics, based on which the top 3 best performing models were chosen: the Deep Neural Network with a Dropout layer (dnnd), the Convolutional Neural Network (cnn), and the Deep Convolutional Neural Network (dcnn).
 
