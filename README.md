@@ -68,19 +68,19 @@ The precision score, recall score, and confusion matrices for the three models a
 Precision Score: 0.9790
 Recall Score: 0.9789
 
-<img style="width:60%" alt="CM_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dnnd.png">
+<img width="400" alt="CM_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dnnd.png">
 
 ### The Convolutional Neural Network (cnn):
 Precision Score: 0.9928
 Recall Score: 0.9928
 
-<img style="width:60%" alt="CM_cnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_cnn.png">
+<img width="400" alt="CM_cnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_cnn.png">
 
 ### The Deep Convolutional Neural Network (dccn):
 Precision Score: 0.9908
 Recall Score: 0.9908
 
-<img style="width:60%" alt="CM_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dcnn.png">
+<img width="400" alt="CM_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dcnn.png">
 
 ## Summary
 
