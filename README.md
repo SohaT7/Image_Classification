@@ -11,10 +11,9 @@
         - [Model Architectures](#Model-Architectures)
         - [Model Metrics](#Model-Metrics)
 - [Results](#results) 
-    -  [Precision, Recall, and the Confusion Matrix](#Precision,-Recall,-and-the-Confusion-Matrix)
-        - [Deep Neural Network (DNN)](#Deep-Neural-Network)
-        - [Convolutional Neural Network (CNN)](#Convolutional-Neural-Network)
-        - [Deep Convolutional Neural Network (DCNN)](#Deep-Convolutional-Neural-Network)
+    - [Deep Neural Network (DNN)](#Deep-Neural-Network)
+    - [Convolutional Neural Network (CNN)](#Convolutional-Neural-Network)
+    - [Deep Convolutional Neural Network (DCNN)](#Deep-Convolutional-Neural-Network)
     - [Making an Example Prediction](#Making-an-Example-Prediction)
 - [Summary](#summary)
 - [Contact Information](#contact-information)
@@ -93,22 +92,21 @@ The 'accuracy' of the CNN and DCNN models can be compared below:
 <img style="width:60%" alt="cnn_dcnn_graph" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png">
 
 ## Results
-### Precision, Recall, and the Confusion Matrix:
 The precision score, recall score, and confusion matrices for the three models are given below. The precision score tells us what proportion of positive identifications were actually correct, whereas the recall score tells us what proportion of actual positives was identified correctly. The confusion matrix plots all the predicted and actual values/labels, and the probability of each (of those events) occurring with the model under consideration.
 
-#### Deep Neural Network:
+### Deep Neural Network:
 * Precision Score: 0.9790 - 97.9% of predicted true are actually true.
 * Recall Score: 0.9789 - 97.9% of actual true were predicted true.
 
 <img alt="CM_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dnnd.png">
 
-#### Convolutional Neural Network:
+### Convolutional Neural Network:
 * Precision Score: 0.9928 - 99.3% of predicted true are actual true.
 * Recall Score: 0.9928 - 99.3% of actual true were predicted true.
 
 <img alt="CM_cnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_cnn.png">
 
-#### Deep Convolutional Neural Network:
+### Deep Convolutional Neural Network:
 * Precision Score: 0.9908 - 99.1% of predicted true are actual true.
 * Recall Score: 0.9908 - 99.1% of actual true were predicted true.
 
