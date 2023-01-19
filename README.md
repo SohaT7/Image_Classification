@@ -12,7 +12,7 @@
         - [Model Metrics](#Model-Metrics)
 - [Results](#results) 
     -  [Precision, Recall, and the Confusion Matrix]()
-        - [Deep Neural Network (DNN)](#Deep-Neural-Network-(-DNN-))
+        - [Deep Neural Network (DNN)](#Deep-Neural-Network-(-D-N-N-))
         - [Convolutional Neural Network (CNN)](#Convolutional-Neural-Network-(-CNN-))
         - [Deep Convolutional Neural Network (DCNN)](#Deep-Convolutional-Neural-Network-(-DCNN-))
     - [Making an Example Prediction](#Making-an-Example-Prediction)
