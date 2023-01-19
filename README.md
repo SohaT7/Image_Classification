@@ -25,7 +25,7 @@
 This Computer Vision analysis aims to solve an image classification problem through building and evaluating machine learning models, such as Deep Neural Network (DNN), Convolutional Neural Network (CNN), and Deep Convolutional Neural Network (DCNN) models, for 60,000 labeled images of handwritten digits from 0-9 in the MNIST dataset.
 
 ### About the Dataset:
-The MNIST (Modified National Institute of Standards and Technology) dataset is a popular dataset containing 60,000 images of handwritten digits from 0-9. The images are grayscale and 28 pixels by 28 pixels in dimension, which totals up to 784 pixels. Each pixel value is an integer vetween 0 and 255, with higher numbers signifying a darker intensity. The training set has 785 columns: the first column is for the label of the image and the remaining 784 are for the 784 pixel values. The test set has 784 columns for the pixel values, and no column for the label of the image. 
+The MNIST (Modified National Institute of Standards and Technology) dataset is a popular dataset containing 60,000 images of handwritten digits from 0-9. The images are grayscale and 28 pixels by 28 pixels in dimension, which totals up to 784 pixels. Each pixel value is an integer vetween 0 and 255, with higher numbers signifying a darker intensity. The training set has 785 columns: the first column is for the label of the image and the remaining 784 are for the 784 pixel values. The test set has 784 columns for the pixel values, and no column for the label of the image. The training set comprises of 50,000 images whereas the validation and test sets comprise of 10,000 images. 
 
 ### Tools Used:
 * Google Cloud Platform (GCP)
