@@ -5,7 +5,17 @@
     - [About the Dataset](#about-the-dataset)
     - [Tools Used](#tools-used)
     - [Description](#description)
-- [Results](#results)
+        - [Model Comparison](#Model-Comparison)
+        - [Building Models](#Building-Models)
+        - [Compiling Models](#Compiling-Models)
+        - [Model Architectures](#Model-Architectures)
+        - [Model Metrics](#Model-Metrics)
+- [Results](#results) 
+        - [Precision, Recall, and the Confusion Matrix]()
+            - [Deep Neural Network with a dropout layer (DNN)](#Deep-Neural-Network-with-a-dropout-layer-(DNN))
+            - [Convolutional Neural Network (CNN)](#Convolutional-Neural-Network-(CNN))
+            - [Deep Convolutional Neural Network (DCNN)](#Deep-Convolutional-Neural-Network-(DCNN))
+        - [Making an Example Prediction](#Making-an-Example-Prediction)
 - [Summary](#summary)
 - [Contact Information](#contact-information)
 
@@ -54,8 +64,10 @@ A Convolutional Neural Network (CNN) additionally consists of convolutional and 
 
 Activation function ReLu (Rectified Linear Unit) is used in our models for it doe snot activate all neurons at the same time and thus prevents the exponential growth in computation required otherwise to operate the network model. A Softmax function is used as the activation function for our dense (output) layer for it returns probabilities instead of logits, i.e. it returns a value between 0 and 1 against each class instead of a value between positive infinity to negative infinity. "Epochs" are the number of complete passes through the training dataset. "Batch size" is the number of samples processed before the model is updated. We use 20 epochs and 32 as the batch size for our models here.
 
-After a model has been built by adding layers to it, it is then compiled by specifying the optimizer, loss function, and metrics for the model. An Optimizer determines how the model is updated based on the data provided and its loss function.Adam Optimizer, one of the most popular optimizers, is used in our models here. A loss function measures how accurate the model is during training. Since we are dealing with a classificaiton problem and have 2 or more labeled classes (we have 10 classes), we will be using the ""Sparse Categorical Crossentropy" as the loss function. Metrics monitor the datasets. The 'accuracy' metric calculates how often the predicted label equals the actual label. 
+#### Compiling Models:
+After a model has been built by adding layers to it, it is then compiled by specifying the optimizer, loss function, and metrics for the model. An Optimizer determines how the model is updated based on the data provided and its loss function.Adam Optimizer, one of the most popular optimizers, is used in our models here. A loss function measures how accurate the model is during training. Since we are dealing with a classificaiton problem and have 2 or more labeled classes (we have 10 classes), we will be using the "Sparse Categorical Crossentropy" as the loss function. Metrics monitor the datasets. The 'accuracy' metric calculates how often the predicted label equals the actual label. 
 
+#### Model Architectures:
 The model architecture for the the Deep Neural Network with a Dropout layer (dnnd), Convolutional Neural Network (cnn), and Deep Convolutional Neural Network (dcnn) is shown below respectively:
 
 <img style="width:60%" alt="dndd_summ" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnnd_summ.png"> 
@@ -67,6 +79,7 @@ The model architecture for the the Deep Neural Network with a Dropout layer (dnn
 #### Model Metrics:
 After the model has been built and compiled, it is then "fit" or "trained" on the training dataset.
 The validation set is used to helps find the optimal values for the hyper-parameters of the model (hyper-parameter optimisation) and thereby help with model selection. The 'loss' and 'accuracy' metrics from the train set and the 'val_loss' and 'val_accuracy' metrics from the validation set plotted against the number of epochs for the three models can be seen below:
+
 <img style="width:70%" alt="dnnd_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnnd_metrics.png">
 
 <img style="width:70%" alt="cnn_metrics" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_metrics.png">
@@ -80,31 +93,33 @@ The 'accuracy' of the CNN and DCNN models can be compared below:
 <img style="width:60%" alt="cnn_dcnn_graph" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png">
 
 ## Results
-The precision score, recall score, and confusion matrices for the three models are given below. The precision score tells us what proportion of positive identifications were actually correct, whereas the recall score tells us what proportion of actual positives was identified correctly. Tje confusion matrix plots all the predicted and actual values/labels, and the probability of each (of those events) occurring with the model under consideration.
+### Precision, Recall, and the Confusion Matrix:
+The precision score, recall score, and confusion matrices for the three models are given below. The precision score tells us what proportion of positive identifications were actually correct, whereas the recall score tells us what proportion of actual positives was identified correctly. The confusion matrix plots all the predicted and actual values/labels, and the probability of each (of those events) occurring with the model under consideration.
 
-### The Deep Neural Network with a dropout layer (dnnd):
+#### Deep Neural Network with a dropout layer (DNN):
 * Precision Score: 0.9790 - 97.9% of predicted true are actually true.
 * Recall Score: 0.9789 - 97.9% of actual true were predicted true.
 
 <img alt="CM_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dnnd.png">
 
-### The Convolutional Neural Network (cnn):
+#### Convolutional Neural Network (CNN):
 * Precision Score: 0.9928 - 99.3% of predicted true are actual true.
 * Recall Score: 0.9928 - 99.3% of actual true were predicted true.
 
 <img alt="CM_cnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_cnn.png">
 
-### The Deep Convolutional Neural Network (dccn):
+#### Deep Convolutional Neural Network (DCNN):
 * Precision Score: 0.9908 - 99.1% of predicted true are actual true.
 * Recall Score: 0.9908 - 99.1% of actual true were predicted true.
 
 <img alt="CM_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dcnn.png">
 
-## Summary
+### Making an Example Prediction:
 An example prediction was made on the first image in the dataset, which accurately predicts the digit.
 
 <img style="width:50%" alt="prediction" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/prediction.png">
 
+## Summary
 Out of the three models - the Deep Neural Network with a Dropout layer (dnnd), the Convolutional Neural Network (cnn), and the Deep Convolutional Neural Network (dcnn) - the CNN model performs the best, with 99.3% as its precision score and 99.3% as its recall score. 
 
 ## Contact Information
