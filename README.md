@@ -12,7 +12,7 @@
         - [Model Metrics](#Model-Metrics)
 - [Results](#results) 
     -  [Precision, Recall, and the Confusion Matrix]()
-        - [Deep Neural Network with a dropout layer (DNN)](#Deep-Neural-Network-with-a-dropout-layer-(DNN))
+        - [Deep Neural Network (DNN)](#Deep-Neural-Network-(DNN))
         - [Convolutional Neural Network (CNN)](#Convolutional-Neural-Network-(CNN))
         - [Deep Convolutional Neural Network (DCNN)](#Deep-Convolutional-Neural-Network-(DCNN))
     - [Making an Example Prediction](#Making-an-Example-Prediction)
@@ -96,7 +96,7 @@ The 'accuracy' of the CNN and DCNN models can be compared below:
 ### Precision, Recall, and the Confusion Matrix:
 The precision score, recall score, and confusion matrices for the three models are given below. The precision score tells us what proportion of positive identifications were actually correct, whereas the recall score tells us what proportion of actual positives was identified correctly. The confusion matrix plots all the predicted and actual values/labels, and the probability of each (of those events) occurring with the model under consideration.
 
-#### Deep Neural Network with a dropout layer (DNN):
+#### Deep Neural Network (DNN):
 * Precision Score: 0.9790 - 97.9% of predicted true are actually true.
 * Recall Score: 0.9789 - 97.9% of actual true were predicted true.
 
