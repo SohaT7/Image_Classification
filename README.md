@@ -32,7 +32,7 @@ The MNIST (Modified National Institute of Standards and Technology) dataset is a
 * Python (TensorFlow, Keras, NumPy, Matplotlib, Seaborn libraries)
 
 ### Description:
-Google Cloud Platform was used for data modeling. The APIs used include the Vertex AI API and the Notebooks API primarily. While creating a notebook in the Google CLoud Platform, the 'Without GPUs' option was selected, as shown below.
+Google Cloud Platform was used for data modeling. The APIs used include the Vertex AI API and the Notebooks API primarily. While creating the [image_classification](https://github.com/SohaT7/Image_Classification/blob/main/image_classification.ipynb) notebook - the main file for this project - in the Google CLoud Platform, the 'Without GPUs' option was selected, as shown below.
 
 ![Notebook](https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/notebook.png)
 
