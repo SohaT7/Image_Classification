@@ -28,11 +28,16 @@ The MNIST (Modified National Institute of Standards and Technology) dataset is a
 
 ### Tools Used:
 * Google Cloud Platform (GCP)
+* APIs - Vertex AI API, Notebooks API
 * Python (TensorFlow, Keras, NumPy, Matplotlib, Seaborn libraries)
 
 ### Description:
-#### Model Comparison:
-The file [model_comparison](#https://github.com/SohaT7/Image_Classification/blob/main/model_comparison.ipynb) contains code that builds multiple models and compares the performance of the metrics for each. The models and the combination of letters they are referred to by in this project (these do not necessarily coincide with the actual official names/acronyms for each model in the field) are as follows:
+Google Cloud Platform was used for data modeling. The APIs used include the Vertex AI API and the Notebooks API primarily. While creating a notebook in the Google CLoud Platform, the 'Without GPUs' option was selected, as shown below.
+
+![Notebook](https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/notebook.png)
+
+#### Model Comparison: 
+Multiple models were built and the performance of their metrics compared (see the [model_comparison](#https://github.com/SohaT7/Image_Classification/blob/main/model_comparison.ipynb) file for reference). The models and the combination of letters with which they are referred to in this project (these do not necessarily coincide with the actual official names/acronyms for each model in the field) are as follows:
  - Neural Network model (nn)
  - Deep Neural Network model (dnn)
  - Deep Neural Network with a dropout layer (dndd)
@@ -88,27 +93,30 @@ The validation set is used to helps find the optimal values for the hyper-parame
 If loss does not go down smoothly, it signifies that either the batch size or the optimizer settings can be improved.
 If the validation loss goes down but then starts to increase, it signifies that overfitting is starting to happen, i.e. the network has started to memorize the details of the training set (the "noise") which does not occur in the validation set. In order to rectify this, we cna either decrease the number of epochs or add a regularization.
 
-The 'accuracy' of the CNN and DCNN models can be compared below:
+The 'accuracy' of the DNN model can be seen below, followed by that of the CNN and DCNN models:
+
+<img style="width:60%" alt="cnn_dcnn_graph" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/dnnd_graph.png">
+
 <img style="width:60%" alt="cnn_dcnn_graph" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/cnn_dcnn_graph.png">
 
 ## Results
 The precision score, recall score, and confusion matrices for the three models are given below. The precision score tells us what proportion of positive identifications were actually correct, whereas the recall score tells us what proportion of actual positives was identified correctly. The confusion matrix plots all the predicted and actual values/labels, and the probability of each (of those events) occurring with the model under consideration.
 
 ### Deep Neural Network:
-* Precision Score: 0.9790 - 97.9% of predicted true are actually true.
-* Recall Score: 0.9789 - 97.9% of actual true were predicted true.
+* Precision Score: 0.9804 - 98.0% of predicted true are actually true.
+* Recall Score: 0.9803 - 98.0% of actual true were predicted true.
 
 <img alt="CM_dnnd" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dnnd.png">
 
 ### Convolutional Neural Network:
-* Precision Score: 0.9928 - 99.3% of predicted true are actual true.
-* Recall Score: 0.9928 - 99.3% of actual true were predicted true.
+* Precision Score: 0.9909 - 99.1% of predicted true are actual true.
+* Recall Score: 0.9909 - 99.1% of actual true were predicted true.
 
 <img alt="CM_cnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_cnn.png">
 
 ### Deep Convolutional Neural Network:
-* Precision Score: 0.9908 - 99.1% of predicted true are actual true.
-* Recall Score: 0.9908 - 99.1% of actual true were predicted true.
+* Precision Score: 0.9934 - 99.3% of predicted true are actual true.
+* Recall Score: 0.9934 - 99.3% of actual true were predicted true.
 
 <img alt="CM_dcnn" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/CM_dcnn.png">
 
@@ -118,7 +126,7 @@ An example prediction was made on the first image in the dataset, which accurate
 <img style="width:50%" alt="prediction" src="https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/prediction.png">
 
 ## Summary
-Out of the three models - the Deep Neural Network with a Dropout layer (dnnd), the Convolutional Neural Network (cnn), and the Deep Convolutional Neural Network (dcnn) - the CNN model performs the best, with 99.3% as its precision score and 99.3% as its recall score. 
+Out of the three models - the Deep Neural Network with a Dropout layer (DNN), the Convolutional Neural Network (CNN), and the Deep Convolutional Neural Network (DCNN) - the DCNN model performs the best, with the highest precision and recall score out of the three models. Its precision score is 99.3%, i.e. out of all the values predicted to be 'True', 99.3% are actually true too. Its recall score is 99.3% as well, i.e. out of the actually trua values, the model is able to predict 99.3% of them as 'True'.
 
 ## Contact Information
 Email: st.sohatariq@gmail.com
