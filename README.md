@@ -37,7 +37,7 @@ Google Cloud Platform was used for data modeling. The APIs used include the Vert
 ![Notebook](https://github.com/SohaT7/Image_Classification/blob/main/Resources/Images/notebook.png)
 
 #### Model Comparison: 
-Multiple models were built and the performance of their metrics compared (see the [model_comparison](#https://github.com/SohaT7/Image_Classification/blob/main/model_comparison.ipynb) file for reference). The models and the combination of letters with which they are referred to in this project (these do not necessarily coincide with the actual official names/acronyms for each model in the field) are as follows:
+Multiple models were built and the performance of their metrics compared (see the [model_comparison](https://github.com/SohaT7/Image_Classification/blob/main/model_comparison.ipynb) file for reference). The models and the combination of letters with which they are referred to in this project (these do not necessarily coincide with the actual official names/acronyms for each model in the field) are as follows:
  - Neural Network model (nn)
  - Deep Neural Network model (dnn)
  - Deep Neural Network with a dropout layer (dndd)
