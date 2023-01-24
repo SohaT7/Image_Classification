@@ -27,7 +27,7 @@ This Computer Vision analysis aims to solve an image classification problem thro
 The MNIST (Modified National Institute of Standards and Technology) dataset is a popular dataset containing 60,000 images of handwritten digits from 0-9. The images are grayscale and 28 pixels by 28 pixels in dimension, which totals up to 784 pixels. Each pixel value is an integer between 0 and 255, with higher numbers signifying a darker intensity. The training set has 785 columns: the first column is for the label of the image, and the remaining 784 are each for the 784 pixel values. The test set has 784 columns for the pixel values (i.e. there is no column for the label of the image). The training set comprises of 50,000 images whereas the validation and test sets comprise of 10,000 images. 
 
 ### Tools Used:
-* Google Cloud Platform (GCP)
+* Google Cloud Platform (GCP) - Vertex AI
 * APIs - Vertex AI API, Notebooks API
 * Python (TensorFlow, Keras, NumPy, Matplotlib, Seaborn libraries)
 
